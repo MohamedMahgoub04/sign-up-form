@@ -12,8 +12,8 @@
 
  <aside>
   <img src="bg.jpg" alt="Background">
-  <div id="logo">
-   <h1>ODIN</h1>
+  <div id="logo-div">
+   <img src="logo.gif" id="logo" alt=""><h1>Gekko</h1>
   </div>
  </aside>
 
@@ -25,21 +25,21 @@
    <br> You know you want to.
   </p>
   <div id="form-div">
-   <form action="#">
+   <form action="#" id="form">
     <h1 class="full-row">Create an account!</h1>
-    <div class="input-div"><label for="">First name</label><input type="text"></div>
-    <div class="input-div"><label for="">Last name</label><input type="text"></div>
-    <div class="input-div full-row"><label for="">Email</label><input type="email"></div>
-    <div class="input-div full-row"><label for="">Phone number</label><input type="tel"></div>
+    <div class="input-div"><label for="">First name <span class="required">*</span></label><input type="text" placeholder="John" required></div>
+    <div class="input-div"><label for="">Last name <span class="required">*</span></label><input type="text" placeholder="Doe" required></div>
+    <div class="input-div full-row"><label for="">Email <span class="required">*</span></label><input type="email" placeholder="example@email.com" required></div>
+    <div class="input-div full-row"><label for="">Phone number</label><input type="tel" placeholder="+1-416-555-1212"></div>
     <div class="input-div full-row">
-     <label for="">Password</label>
+     <label for="">Password <span class="required">*</span></label>
      <div class="pass">
-      <input id="pass1" type="password"><img id="eye1" src="hidden.svg" class="svg" alt="">
+      <input id="pass1" type="password" minlength="5" maxlength="20" placeholder="5-20 Characters" required><img id="eye1" src="hidden.svg" class="svg" alt="">
      </div>
     </div>
    </form>
   </div>
-  <button>Create Account</button>
+  <button type="submit" form="form">Create Account</button>
   <p>Already have an account? <a href="#">Log in</a></p>
  </main>
 
