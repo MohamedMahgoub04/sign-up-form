@@ -48,12 +48,22 @@ main{
  width: calc(100vw - var(--aside-width));
  gap: 2rem;
 }
-form{
+#form-div{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ /* justify-content: center; */
  box-shadow: 0 0px 20px 0px rgb(175, 194, 201);
  background-color: #fff;
- /* width: min(75%); */
  width: 100%;
- padding: 1rem 10rem 2rem 10rem;
+ padding: 1rem 0 2rem 0;
+}
+form{
+ /* margin: 1rem auto 2rem auto; */
+ width: 70%;
+ /* width: min(75%); */
+ 
+ /* padding: 1rem 10rem 2rem 10rem; */
  display: grid;
  grid-template-columns: 1fr 1fr;
  grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -76,6 +86,7 @@ label{
  font-weight: 400;
 }
 input{
+ width: auto;
  border-radius: 3px;
  border: 1px solid #ccc;
  font-size: 18px;
@@ -91,7 +102,31 @@ input:focus{
 img{
  width: 100%;
  height: 100%;
+}
+.pass{
+ position: relative;
+ display: flex;
+ flex-direction: row;
+ /* align-items: center; */
+}
+.pass > input{
+ width: 100%;
+}
+.svg{
+ position: absolute;
+ right: 10px;
+ top: 0;
+ bottom: 0;
+ margin-top: auto;
+ margin-bottom: auto;
+ /* right: 0; */
+ /* margin: ; */
+ width: 25px;
+ height: 25px;
 
+}
+.svg:hover{
+ cursor: pointer;
 }
 h1{
  align-self: center;
@@ -101,19 +136,21 @@ h1{
  /* row-gap: 0; */
 }
 button{
- transition: 0.1s;
+ transition: 0.3s;
  border: 2px solid var(--main);
- background-color: transparent;
- color: var(--main);
+ background-color: var(--main);
+ color: var(--white);
  border-radius: 10px;
  padding: 12.5px 0;
  width: 15rem;
  margin-left: 10rem;
  font-size: 20px;
+ font-weight: 500;
 }
 button:hover{
- transition: 0.1s;
- background-color: var(--main);
+ transition: 0.3s;
+ border: 2px solid #254d5e;
+ background-color: #254d5e;
  color: var(--white);
  cursor: pointer;
 }

@@ -20,19 +20,25 @@
  <main>
   <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi!
   
-  <br> Sign up now to get started.
-  <br>
-  <br> You know you want to.
-</p>
-  <form action="#">
-   <h1 class="full-row">Create an account!</h1>
-   <div class="input-div"><label for="">First name</label><input type="text"></div>
-   <div class="input-div"><label for="">Last name</label><input type="text"></div>
-   <div class="input-div full-row"><label for="">Email</label><input type="email"></div>
-   <div class="input-div full-row"><label for="">Phone number</label><input type="tel"></div>
-   <div class="input-div"><label for="">Password</label><input type="password"></div>
-   <div class="input-div"><label for="">Confirm password</label><input type="password"></div>
-  </form>
+   <br> Sign up now to get started.
+   <br>
+   <br> You know you want to.
+  </p>
+  <div id="form-div">
+   <form action="#">
+    <h1 class="full-row">Create an account!</h1>
+    <div class="input-div"><label for="">First name</label><input type="text"></div>
+    <div class="input-div"><label for="">Last name</label><input type="text"></div>
+    <div class="input-div full-row"><label for="">Email</label><input type="email"></div>
+    <div class="input-div full-row"><label for="">Phone number</label><input type="tel"></div>
+    <div class="input-div full-row">
+     <label for="">Password</label>
+     <div class="pass">
+      <input id="pass1" type="password"><img id="eye1" src="hidden.svg" class="svg" alt="">
+     </div>
+    </div>
+   </form>
+  </div>
   <button>Create Account</button>
   <p>Already have an account? <a href="#">Log in</a></p>
  </main>
